@@ -1,0 +1,17 @@
+#pragma once
+
+#include <string>
+#include <queue>
+#include <map>
+
+namespace template_library {
+
+    class EventScheduler {
+        std::map<int, std::string> events; 
+        std::priority_queue<int, std::vector<int>, std::greater<int>> event_times; 
+
+    public:
+        void add_event(int time, const std::string& event);
+        std::string process_next();
+    };
+}
