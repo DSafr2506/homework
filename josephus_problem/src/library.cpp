@@ -15,7 +15,7 @@ namespace template_library {
                 dq.push_back(dq.front());
                 dq.pop_front();
             }
-            dq.pop_front(); // Удаление K-го элемента
+            dq.pop_front();
         }
     return dq.front();
         return 0;
